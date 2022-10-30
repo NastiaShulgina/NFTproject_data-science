@@ -1,0 +1,38 @@
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.text {
+    text-align: center;
+}
+
+.histograms {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    text-align: center;
+}
+
+.histogramImage {
+    width: 500px;
+    height: auto;
+    margin: 30px;
+    /* background-image: url(../assets/histogram1.jpg); */
+    /* padding: 50px;
+    background-color: green; */
+    transition: transform 3s;
+    /* width: 200px;
+    height: 200px;
+    margin: 0 auto; */
+}
+
+.histogramImage:hover {
+    -ms-transform: scale(1.5);
+    /* IE 9 */
+    -webkit-transform: scale(1.5);
+    /* Safari 3-8 */
+    transform: scale(1.5);
+}

@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Nothing+You+Could+Do&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rock+Salt&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+
+.quiz {
+    padding: 5px 30px;
+    width: calc(100vw - 80px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* font-family: 'Nothing You Could Do'; */
+    font-family: 'Raleway', sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+    /* color: #231942; */
+    color: rgba(240, 46, 170, 0.4);
+}
+
+.heading {
+    width: max-content;
+    -webkit-text-stroke: 1.5px #231942;
+    color: 1.5px rgba(240, 46, 170, 0.4);
+    /* color: #e0b1cb; */
+    font-family: 'Rock Salt', cursive;
+    font-size: 50px;
+    justify-self: center;
+}
+
+p {
+    color: #231942;
+}
+
+p:last-child {
+    padding-top: 50px;
+}
+
+.nft_cards {
+    width: 80vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}

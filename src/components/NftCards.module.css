@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Nothing+You+Could+Do&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rock+Salt&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+
+.nft_cards {
+    /* width: 80vw; */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 30px;
+    margin-left: -5vw;
+    width: 85vw;
+}
+
+.nft_card {
+    /* background-color: transparent; */
+    width: 25vw;
+    height: 25vw;
+    /* border: 1px solid #f1f1f1; */
+    perspective: 1000px; /* Remove this if you don't want the 3D effect */
+}
+
+.nft_cards_inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    width: max-content;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+}
+
+.nft_card:hover .nft_cards_inner {
+    transform: rotateY(180deg);
+    cursor: pointer;
+  }
+
+.nft_assets, .nft_prices {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.nft_assets, .nft_prices {
+    width: 25vw;
+    height: auto;
+    border-radius: 50%;
+    /* border: solid #231942; */
+    /* border-width: 2px; */
+    margin: 25px;
+}
+
+.nft_assets, .nft_prices {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden; /* Safari */
+    backface-visibility: hidden;
+}
+
+/* .nft_card:first-child {
+    rotate: -30deg;
+} */
+
+.nft_assets {
+    rotate: -15deg;
+    box-shadow: rgba(240, 46, 170, 0.4) -5px 5px, rgba(240, 46, 170, 0.3) -10px 10px, rgba(240, 46, 170, 0.2) -15px 15px, rgba(240, 46, 170, 0.1) -20px 20px, rgba(240, 46, 170, 0.05) -25px 25px;
+}
+
+.nft_prices {
+    /* background-color: dodgerblue;
+    color: white; */
+    transform: rotateY(180deg);
+    -webkit-text-stroke: 1.5px #231942;
+    color: #e0b1cb;
+    font-family: 'Rock Salt', cursive;
+    font-size: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
