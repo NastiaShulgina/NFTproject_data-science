@@ -17,7 +17,7 @@
     font-weight: 600;
     font-size: 20px;
     /* color: #231942; */
-    color: rgba(240, 46, 170, 0.4);
+    color: rgba(88, 13, 60, 0.4);
 }
 
 .heading {
@@ -32,6 +32,7 @@
 
 p {
     color: #231942;
+    text-align: center;
 }
 
 p:last-child {
@@ -43,4 +44,64 @@ p:last-child {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+}
+
+.nfts {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    text-align: center;
+}
+
+.nft {
+    width: 500px;
+    height: auto;
+    margin: 30px;
+    transition: transform 3s;
+}
+
+.nft:hover {
+    -ms-transform: scale(1.5);
+    /* IE 9 */
+    -webkit-transform: scale(1.5);
+    /* Safari 3-8 */
+    transform: scale(1.5);
+}
+
+.styled_table {
+    border-collapse: collapse;
+    margin: 60px 0;
+    font-size: 0.9em;
+    font-family: sans-serif;
+    min-width: 400px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+
+.styled_table thead tr {
+    background-color: rgba(79, 12, 54, 0.4);
+    color: #ffffff;
+    text-align: left;
+}
+
+.styled_table th,
+.styled_table td {
+    padding: 12px 15px;
+}
+
+.styled_table tbody tr {
+    border-bottom: 1px solid #dddddd;
+    color: rgba(79, 12, 54, 0.4);
+}
+
+.styled_table tbody tr:nth-of-type(even) {
+    background-color: #f3f3f3;
+}
+
+.styled_table tbody tr:last-of-type {
+    border-bottom: 2px solid rgba(79, 12, 54, 0.4);
+}
+
+.conclusion {
+    margin-top: -100px;
+    margin-bottom: 40px;
 }

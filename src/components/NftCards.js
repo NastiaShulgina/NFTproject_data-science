@@ -22,8 +22,6 @@ const NftCards = () => {
 
     const nftsTraits = [cheapest, middle, expensive]
 
-    // console.log(nf);
-
     return (
         <div className={NftCardsCSS.nft_cards}>
             {
